@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -8,13 +8,13 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-500 pb-8 gap-6">
 
                     <div className="flex items-center gap-2">
-                        📚 <span className="text-xl font-bold tracking-tight">Bookshop</span>
+                        <img className='w-5' src="./src/assets/images/logo.png" alt="icon" /> <span className="text-xl font-bold tracking-tight">Bookshop</span>
                     </div>
 
                     <nav className="flex gap-8 font-medium">
-                        <a href="#" className="hover:text-pink-400 transition-colors">Home</a>
-                        <a href="#" className="hover:text-pink-400 transition-colors">Books</a>
-                        <a href="#" className="hover:text-pink-400 transition-colors">About Us</a>
+                    <Link to="/" className="cursor-pointer hover:text-pink-400 transition-all">Home</Link>
+                    <Link to="/books" className="cursor-pointer hover:text-pink-400 transition-all">Books</Link>
+                    <Link to="/about" className="cursor-pointer hover:text-pink-400 transition-all">About us</Link>
                     </nav>
 
                     <div className="flex gap-5 text-2xl">
