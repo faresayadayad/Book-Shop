@@ -24,7 +24,7 @@ export default function Signup() {
     });
     return (
         <>
-            <Formik initialValues={{ first_name: "", last_name: "", email: "", password: "", password_confirmation: "" }} validationSchema={signupSchema} onSubmit={(values) => { handleSignup(values) }}>
+            <Formik initialValues={{ first_name: "", last_name: "", email: "", password: "", password_confirmation: "",terms:false }} validationSchema={signupSchema} onSubmit={(values) => { handleSignup(values) }}>
                 <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 ">
                     <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 w-full max-w-lg">
 

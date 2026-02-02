@@ -7,7 +7,7 @@ export default function Recomended() {
             price: "$30.00",
             rating: 4.2,
             reviews: 180,
-            image: "./src/assets/images/book7.png"
+            image: "./src/assets/image/book7.png"
         },
         {
             id: 2,
@@ -16,7 +16,7 @@ export default function Recomended() {
             price: "$40.00",
             rating: 4.2,
             reviews: 210,
-            image: "./src/assets/images/book8.png"
+            image: "./src/assets/image/book8.png"
         }
     ];
     return (
@@ -57,11 +57,11 @@ export default function Recomended() {
                                 <div className="flex items-center justify-between mt-4">
                                     <span className="text-xl font-bold text-gray-800">{book.price}</span>
                                     <div className="flex gap-2">
-                                        <button className="bg-[#D81B60] text-white px-4 py-2 rounded-md text-sm font-semibold flex items-center gap-2 hover:bg-pink-700 transition-colors">
-                                            Add To Cart <img className='w-5' src="./src/assets/images/shopping-cart (1) 1.png" alt="icon" />
+                                        <button className="bg-[#D81B60] text-white px-4 py-2 rounded-md cursor-pointer text-sm font-semibold flex items-center gap-2 hover:bg-pink-700 transition-colors">
+                                            Add To Cart <img className='w-5' src="./src/assets/image/shopping-cart (1) 1.png" alt="icon" />
                                         </button>
-                                        <button className="border border-pink-200 p-2 rounded-md text-pink-500 hover:bg-pink-50 transition-colors">
-                                            <img className='w-5' src="./src/assets/images/heart (1) 1.png" alt="icon" />
+                                        <button className="border border-pink-200 p-2 rounded-md text-pink-500 cursor-pointer hover:bg-pink-50 transition-colors">
+                                            <img className='w-5' src="./src/assets/image/heart (1) 1.png" alt="icon" />
                                         </button>
                                     </div>
                                 </div>

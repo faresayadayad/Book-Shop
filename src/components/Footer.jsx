@@ -8,13 +8,13 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-500 pb-8 gap-6">
 
                     <div className="flex items-center gap-2">
-                        <img className='w-5' src="./src/assets/images/logo.png" alt="icon" /> <span className="text-xl font-bold tracking-tight">Bookshop</span>
+                        <img className='w-5' src="./src/assets/image/logo.png" alt="icon" /> <span className="text-xl font-bold tracking-tight">Bookshop</span>
                     </div>
 
                     <nav className="flex gap-8 font-medium">
-                    <Link to="/" className="cursor-pointer hover:text-pink-400 transition-all">Home</Link>
-                    <Link to="/books" className="cursor-pointer hover:text-pink-400 transition-all">Books</Link>
-                    <Link to="/about" className="cursor-pointer hover:text-pink-400 transition-all">About us</Link>
+                        <Link to="/" className="cursor-pointer hover:text-pink-400 transition-all">Home</Link>
+                        <Link to="/books" className="cursor-pointer hover:text-pink-400 transition-all">Books</Link>
+                        <Link to="/About" className="cursor-pointer hover:text-pink-400 transition-all">About us</Link>
                     </nav>
 
                     <div className="flex gap-5 text-2xl">

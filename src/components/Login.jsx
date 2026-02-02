@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Link } from "react-router-dom";
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -23,7 +24,7 @@ export default function Login() {
     return (
         <>
 
-            <Formik initialValues={{ email: "", password: "" }} validationSchema={loginSchema} onSubmit={(values) => { handleLogin(values) }}>
+            <Formik initialValues={{ email: "", password: "", terms: false }} validationSchema={loginSchema} onSubmit={(values) => { handleLogin(values) }}>
                 <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 ">
                     <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 w-full max-w-lg">
 
@@ -60,7 +61,7 @@ export default function Login() {
                             <div className="flex items-center gap-2 py-2">
                                 <Field type="checkbox" name="terms" id="terms" className="w-4 h-4 border-gray-300 rounded text-pink-600 focus:ring-pink-500 cursor-pointer" />
                                 <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer">
-                                    Remember me <span className="text-pink-600 hover:underline cursor-pointer pl-50">Forget password?</span>
+                                    Remember me <Link to="/ForgetPassword" className="text-pink-600 hover:underline cursor-pointer pl-50">Forget password?</Link>
                                 </label>
                             </div>
 

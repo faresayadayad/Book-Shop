@@ -20,7 +20,7 @@ export default function Sale() {
 
       <div className="flex items-center gap-4">
         
-        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-gray-400 hover:text-gray-800 transition">
+        <button className="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-white shadow-md text-gray-400 hover:text-gray-800 transition">
           &#10094;
         </button>
 
@@ -30,7 +30,7 @@ export default function Sale() {
             <div key={item} className="flex bg-[#3B2F4A] text-white p-4 rounded-xl flex-1 min-w-112.5">
               
               <div className="w-2/5">
-              <img className="rounded-lg shadow-xl w-full h-full object-cover" src="./src/assets/images/book7.png" alt="Book Cover" />
+              <img className="rounded-lg shadow-xl w-full h-full object-cover" src="./src/assets/image/book7.png" alt="Book Cover" />
               </div>
 
               <div className="w-3/5 pl-5 flex flex-col justify-between">
@@ -61,7 +61,7 @@ export default function Sale() {
                   
                   <div className="flex justify-end mt-4 ">
                     <button className="bg-pink-600 p-2 rounded-lg hover:bg-pink-700 transition">
-                      <img className='w-5' src="./src/assets/images/shopping-cart (1) 1.png" alt="icon" />
+                      <img className='w-5' src="./src/assets/image/shopping-cart (1) 1.png" alt="icon" />
                     </button>
                   </div>
 
@@ -71,7 +71,7 @@ export default function Sale() {
           ))}
         </div>
 
-        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-gray-400 hover:text-gray-800 transition">
+        <button className="w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-white shadow-md text-gray-400 hover:text-gray-800 transition">
           &#10095;
         </button>
       </div>
