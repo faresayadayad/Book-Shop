@@ -7,7 +7,7 @@ export default function ResetPassword() {
     const handleResetPassword = async (values) => {
 
         try {
-            const res = await axios.post("https://bookstore.eraasoft.pro/api/forget-password", values);
+            const res = await axios.post("https://bookstore.eraasoft.pro/api//reset-password", values);
             console.log(res);
         } catch (error) {
             console.log(error);

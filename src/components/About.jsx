@@ -3,7 +3,7 @@ export default function About() {
   return (
     <>
       <div className="p-20 bg-[#F5F5F5]">
-        <h2 className="flex items-center justify-center text-3xl font-bold m-8">Our Mission</h2>
+        <h2 className="flex items-center justify-center text-3xl font-bold m-8 text-center">Our Mission</h2>
         <div className="cards m-10 flex gap-10 items-center justify-center flex-wrap">
 
           <div className="card-1 w-90 p-4 outline-2 outline-offset-2 outline-[#22222233] rounded-xl">

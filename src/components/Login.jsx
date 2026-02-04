@@ -58,11 +58,14 @@ export default function Login() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-2 py-2">
-                                <Field type="checkbox" name="terms" id="terms" className="w-4 h-4 border-gray-300 rounded text-pink-600 focus:ring-pink-500 cursor-pointer" />
-                                <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer">
-                                    Remember me <Link to="/ForgetPassword" className="text-pink-600 hover:underline cursor-pointer pl-50">Forget password?</Link>
-                                </label>
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 py-2">
+                                <div className="flex items-center gap-2">
+                                    <Field type="checkbox" name="terms" id="terms" className="w-4 h-4 border-gray-300 rounded text-pink-600 focus:ring-pink-500 cursor-pointer" />
+                                    <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer">Remember me</label>
+                                </div>
+                                <Link to="/ForgetPassword" name="forget" className="text-sm text-pink-600 hover:underline cursor-pointer transition-all">
+                                    Forget password?
+                                </Link>
                             </div>
 
                             <button type='submit' className="w-full bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold py-3 rounded-lg shadow-md transition-colors duration-300">
@@ -70,8 +73,11 @@ export default function Login() {
                             </button>
                         </Form>
 
-                        <p className="text-center text-gray-600 mt-6 text-sm">
-                            Don’t have an account? <span className="text-pink-600 font-semibold cursor-pointer hover:underline">Sign Up</span>
+                        <p className="text-center text-gray-600 mt-6 text-sm ">
+                            Don’t have an account?
+                            <Link to="/Signup" name="signup" className="text-pink-600 font-semibold cursor-pointer hover:underline">
+                                Sign Up
+                            </Link>
                         </p>
 
                         <div className="relative my-8 text-center">
@@ -79,15 +85,15 @@ export default function Login() {
                             <span className="absolute left-1/2 -top-3 -translate-x-1/2 bg-white px-4 text-gray-400 text-sm italic">or</span>
                         </div>
 
-                        <div className="space-y-3">
-                            <button className="w-full flex items-center justify-center gap-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors shadow-sm">
+                        <div className="space-y-3 flex gap-4 justify-center sm:flex-col">
+                            <button className="w-10 h-10 sm:w-full flex items-center justify-center gap-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors shadow-sm">
                                 <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="w-5 h-5" alt="google" />
-                                <span className="text-sm font-medium text-gray-700">Sign up with Google</span>
+                                <span className="hidden sm:block text-sm font-medium text-gray-700">Sign up with Google</span>
                             </button>
 
-                            <button className="w-full flex items-center justify-center gap-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors shadow-sm">
+                            <button className="w-10 h-10 sm:w-full flex items-center justify-center gap-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors shadow-sm">
                                 <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" className="w-5 h-5" alt="facebook" />
-                                <span className="text-sm font-medium text-gray-700">Sign up with Facebook</span>
+                                <span className="hidden sm:block text-sm font-medium text-gray-700">Sign up with Facebook</span>
                             </button>
                         </div>
 

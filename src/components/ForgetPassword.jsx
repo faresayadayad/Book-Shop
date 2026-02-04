@@ -44,7 +44,7 @@ export default function ForgetPassword() {
                             <button type='submit' to="/AddCode" className="w-full cursor-pointer bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold py-3 mt-4 rounded-lg shadow-md transition-colors duration-300">
                                 Send reset code
                             </button>
-                            {/* <Link type="submit" to="/AddCode" className=" w-full cursor-pointer bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold py-3 mt-4 rounded-lg shadow-md transition-colors duration-300">Send reset code</Link> */}
+                            <Link type="submit" to="/AddCode" className=" w-full cursor-pointer bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold py-3 mt-4 rounded-lg shadow-md transition-colors duration-300">Send reset code</Link>
                         </Form>
 
                        
