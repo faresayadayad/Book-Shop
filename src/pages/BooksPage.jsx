@@ -1,22 +1,20 @@
-import About from "../components/About";
-import Features from "../components/Features";
-import Questions from "../components/Questions";
+import Books from "../components/Books";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 
-
-export default function AboutPage() {
+export default function BooksPage() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
+            <header className="relative min-h-30 md:h-30 w-full flex flex-col overflow-hidden">
 
-            <header className="relative h-24 md:h-100 w-full overflow-visible">
                 <img src="./src/assets/image/bg.png" alt="Library" className="absolute inset-0 h-full w-full object-cover" />
+
 
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="absolute inset-0 bg-white/15 h-20"></div>
 
-                <nav className="relative z-50 flex items-center justify-between px-6 md:px-10 md:py-0 py-4 text-white">
+                <nav className="relative z-50 flex items-center justify-between px-4 pt-0  text-white">
 
 
                     <div className="flex items-center gap-2 text-xl font-bold">
@@ -52,13 +50,16 @@ export default function AboutPage() {
                                 <p className="text-xs opacity-60">Johnsmith@gmail.com</p>
                             </div>
                         </div>
+                        <div className="flex gap-4 mt-6 ">
+                            <button className="p-3 bg-pink-700 rounded-full"><img className='w-6' src="./src/assets/image/shopping-cart (1) 1.png" alt="icon" /></button>
+                            <button className="p-3 bg-white rounded-full"><img className='w-6' src="./src/assets/image/heart (1) 1.png" alt="icon" /></button>
+                        </div>
                     </div>
                 </nav>
 
             </header>
-            <About />
-            <Questions />
-            <Features />
+            
+            <Books />
         </>
     )
 }

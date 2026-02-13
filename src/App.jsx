@@ -10,6 +10,9 @@ import AddCodePage from "./pages/AddCodePage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import HeaderAfterSignUpPage from "./pages/HeaderAfterSignUpPage";
 import AboutPage from "./pages/AboutPage";
+import CartPage from "./pages/CartPage";
+import BooksPage from "./pages/BooksPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 export default function App() {
   return (
@@ -23,10 +26,13 @@ export default function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
             <Route path="/About" element={<AboutPage />} />
+            <Route path="/Books" element={<BooksPage />} />
+            <Route path="/Cart" element={<CartPage />} />
             <Route path="/ForgetPassword" element={<ForgetPasswordPage />} />
             <Route path="/AddCode" element={<AddCodePage />} />
             <Route path="/ResetPassword" element={<ResetPasswordPage />} />
             <Route path="/HeaderAfterSignUp" element={<HeaderAfterSignUpPage />} />
+            <Route path="/ProductDetails" element={<ProductDetailsPage />} />
           </Route>
 
           {/* <Route path="/" element={<SecondLayOut />}>
